@@ -1,23 +1,95 @@
 @use 'headerStructure';
-body{
+@use 'formStyle';
+body {
+
     margin: 0;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-header{
-    background: url(../assets/hero.jpg) no-repeat center top;
+
+header {
+    background: url(../assets/hero.jpg) no-repeat center top #0000005b;
     background-size: cover;
     height: 100vh;
+    align-self: stretch;
+    color: white;
+
+    h1 {
+        font-size: 6rem;
+        margin: 0;
+    }
+
+    h2 {
+        color: rgb(29, 169, 239);
+        margin: 0;
+    }
+    p{
+        color: rgb(239, 29, 29);
+        color: rgb(29, 169, 239);
+        color:#fff;
+    }
 }
-// .color-overlay{
-// background: #0000005b;
-// height: 100%;
-// width: 100%;
-// position:absolute;
-// }
-.nav-logo{
+
+main {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-between;
+    height: 200vh;
+}
+
+.color-overlay {
+    background: #0000009b;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.nav-logo {
     height: 100px;
 }
-    .nav-btn{
-        background: #fff;
-        border-radius: 50pc;
+
+.nav-btn {
+    background: #fff;
+    border-radius: 50pc;
+    color: #000000;
+}
+
+
+//services section
+.services-container,
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    p,
+    a {
+        padding: 1rem;
+        margin: 0;
     }
+}
+
+.services-card-img {
+    width: 100%;
+}
+
+//needs work
+.emphasize {
+    padding: 1rem;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: larger;
+}
