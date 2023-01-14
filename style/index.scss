@@ -1,0 +1,23 @@
+@use 'headerStructure';
+body{
+    margin: 0;
+   
+}
+header{
+    background: url(../assets/hero.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+}
+// .color-overlay{
+// background: #0000005b;
+// height: 100%;
+// width: 100%;
+// position:absolute;
+// }
+.nav-logo{
+    height: 100px;
+}
+    .nav-btn{
+        background: #fff;
+        border-radius: 50pc;
+    }
