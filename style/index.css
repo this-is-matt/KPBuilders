@@ -48,12 +48,52 @@ ul li {
   width: 80%;
 }
 
-.header-form-container {
-  background: white;
+form {
+  padding: 25px;
+  margin: 25px;
+  background: #606060b7;
 }
-.header-form-container div {
-  padding: 1rem;
-  margin-right: 100%;
+form h2 {
+  margin: 0 0 0.5rem;
+  color: #1da9ef;
+}
+
+input,
+textarea,
+select {
+  width: calc(100% - 18px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #1da9ef;
+}
+
+select {
+  width: auto;
+}
+
+input::placeholder {
+  color: #666;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #1da9ef;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+button:hover {
+  background: #2371a0;
+}
+
+div {
+  padding: 0.5rem;
+}
+div a {
+  color: #1da9ef;
 }
 
 body {
@@ -74,14 +114,15 @@ header h1 {
   font-size: 6rem;
   margin: 0;
 }
-header h2 {
-  color: #1da9ef;
-  margin: 0;
-}
 header p {
   color: #ef1d1d;
   color: #1da9ef;
   color: #fff;
+}
+
+.header-title-container h2 {
+  color: #1da9ef;
+  margin: 0;
 }
 
 main {

@@ -1,5 +1,7 @@
+@use 'variables' as v;
 @use 'headerStructure';
 @use 'formStyle';
+
 body {
 
     margin: 0;
@@ -20,15 +22,16 @@ header {
         margin: 0;
     }
 
-    h2 {
-        color: rgb(29, 169, 239);
-        margin: 0;
-    }
-    p{
+    p {
         color: rgb(239, 29, 29);
-        color: rgb(29, 169, 239);
-        color:#fff;
+        color: v.$light-accent;
+        color: #fff;
     }
+}
+
+.header-title-container h2 {
+    color: v.$light-accent;
+    margin: 0;
 }
 
 main {

@@ -1,7 +1,75 @@
-.header-form-container{
-    background: white;
-    div{
-        padding: 1rem;
-        margin-right: 100%;
+// .header-form-container{
+//     background: white;
+//     div{
+//         padding: 1rem;
+//         margin-right: 100%;
+//     }
+// }
+
+// h1 {
+//     margin: 0 0 20px;
+//     font-weight: 400;
+//     color: #1c87c9;
+// }
+
+// p {
+//     margin: 0 0 5px;
+// }
+
+// .main-block {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     min-height: 100vh;
+//     background: #1c87c9;
+// }
+@use 'variables' as v;
+
+form {
+    padding: 25px;
+    margin: 25px;
+    // box-shadow: 0 2px 5px #f5f5f5;
+    background: #606060b7;
+    h2{
+        margin:0 0 .5rem;
+        color: v.$light-accent;
+    }
+}
+
+input,
+textarea,
+select {
+    width: calc(100% - 18px);
+    // height: 1.5rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid v.$light-accent;
+    // outline: none;
+}
+select{
+ width: auto;
+}
+input::placeholder {
+    color: #666;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1da9ef;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+button:hover {
+    background: v.$light-hover;
+}
+div{
+    padding: .5rem;
+    a{
+        color:#1da9ef; 
     }
 }
