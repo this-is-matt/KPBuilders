@@ -2,8 +2,15 @@
 @use 'headerStructure';
 @use 'formStyle';
 
-body {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -35,12 +42,13 @@ header {
 }
 
 main {
-    width: 1200px;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: space-between;
     height: 200vh;
+    margin: 5rem 0;
 }
 
 .color-overlay {
@@ -61,7 +69,6 @@ main {
 }
 
 
-//services section
 .services-container,
 .testimonial-container {
     display: flex;
@@ -74,6 +81,7 @@ main {
     align-items: center;
     width: 350px;
     min-height: 400px;
+    background: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
     border-radius: 8px;
     overflow: hidden;
