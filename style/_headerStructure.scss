@@ -6,9 +6,7 @@ header{
 .nav-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
-    position: absolute;
 }
 
 nav {
@@ -32,6 +30,8 @@ ul {
 .hero-container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    // flex: 0 0 100%;
     align-items: center;
     height: 100%;
     gap: 1rem;
@@ -39,13 +39,4 @@ ul {
 .header-title-container{
 padding: 2rem;
 width: 50%;
-}
-.header-form-container {
-    padding: 2rem;
-    form {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        justify-items: center;
-    }
 }

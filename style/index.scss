@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,12 +20,19 @@ body {
 header {
     background: url(../assets/hero.jpg) no-repeat center top #0000005b;
     background-size: cover;
-    height: 100vh;
-    align-self: stretch;
+    background-blend-mode: lighten;
+    min-height: 100vh;
+    width: 100%;
+    // align-self: stretch;
     color: white;
+    // display: flex;
+    // flex-wrap: wrap;
+    // overflow-x: hidden;
 
     h1 {
+        // font-size: 6rem;
         font-size: 6rem;
+        font-size: clamp(2.5rem, 5vw, 6rem);
         margin: 0;
     }
 
@@ -39,31 +47,35 @@ header {
     color: v.$light-accent;
     margin: 0;
 }
-
+.nav{
+    
+}
 main {
     display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: space-between;
+
     height: 300vh;
     margin: 5rem 0;
 }
 
 .color-overlay {
     background: #0000009b;
+    // background: #ffffff40;
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
 .nav-logo {
-    height: 100px;
+    height: 75px;
 }
 
 .nav-btn {
     background: #fff;
     border-radius: 50px;
-    color: #000000;
+    color: v.$light-accent;
 }
 
 
@@ -76,21 +88,14 @@ main {
     grid-row: 2/3;
     grid-column: 2/3;
 }
-.cta-container{
-grid-column: 2/3;
-text-align: center;
+
+.cta-container {
+    grid-column: 2/3;
+    text-align: center;
 }
+
 .about-us-container {
     grid-column: 2/3;
-}
-
-.services-wrapper,
-.about-wrapper {
-    background: #5379921b;
-    padding: 8rem 0;
-}
-
-.about-us-container {
     width: 90%;
     margin: 0 auto;
     line-height: 1.5rem;
@@ -100,9 +105,17 @@ text-align: center;
     }
 }
 
+// .services-wrapper,
+// .about-wrapper
+.wrapper:nth-child(2n) {
+    background: #5379921b;
+    padding: 8rem 0;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+
     // // grid-template-rows: 1fr 1fr;
     h2 {
         grid-row: 1/2;
@@ -115,7 +128,7 @@ text-align: center;
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     width: 350px;
     min-height: 400px;
     background: #fff;
@@ -131,12 +144,14 @@ text-align: center;
 
     strong,
     .testimonial-sub {
+        margin: 0 0 0 1rem;
         padding: 0;
         text-align: left;
     }
 
     //needs work
     .emphasize {
+        margin: auto .5rem;
         padding: 1rem;
         border: 1px solid black;
         font-weight: bold;
@@ -148,7 +163,7 @@ text-align: center;
     width: 100%;
 }
 
-.cta-btn{
+.cta-btn {
     // border: 1px solid black;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 10px;
     border-radius: 50px;
@@ -159,8 +174,9 @@ text-align: center;
     text-decoration: none;
     background: v.$light-accent;
     color: white;
-    transition: background-color 200ms;
-    &:hover{
+    transition: background-color 250ms;
+
+    &:hover {
         background: v.$light-hover;
     }
 }
