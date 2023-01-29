@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -37,7 +37,7 @@ header {
     }
 
     p {
-        color: v.$dark-accent;
+        // color: v.$dark-accent;
         color: v.$light-accent;
         color: #fff;
     }
