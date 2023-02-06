@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+@media only screen and (max-width: 1275px) {
+
+    .header-title-container {
+        padding: 2rem;
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: clamp(2.5rem, 8vw, 8rem);
+    }
+
+    .header-form-container {
+        display: none;
+    }
+}
+
+
+//breakpoint at 1030 for cards and faq. 
+// breakpoint at 640 for menu
+// breakpoint at 850 for cta
+// breakpoint at 1516 for faq 

@@ -1,0 +1,47 @@
+@use 'variables' as v;
+
+.cta-wrapper {
+    display: flex;
+    max-width: 800px;
+    align-self: center;
+    padding: 0;
+    border-radius: v.$radius;
+    flex-direction: row;
+    background: #5379921b;
+    overflow: hidden;
+
+}
+
+.cta-headshot {
+    grid-column: 1/2;
+    max-height: 400px;
+    margin-right: auto;
+}
+
+.cta-container {
+    grid-column: 2/4;
+    margin: auto 0;
+    padding: 0 2rem;
+    .cta-h2 {
+     text-align: center;
+    }
+
+}
+
+.cta-btn {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 10px;
+    border-radius: v.$radius;
+    padding: 1rem;
+    margin: 3rem auto 0;
+    display: block;
+    width: 250px;
+    text-decoration: none;
+    background: v.$light-accent;
+    color: white;
+    transition: background-color 250ms;
+    text-align: center;
+
+    &:hover {
+        background: v.$light-hover;
+    }
+}

@@ -1,0 +1,16 @@
+.faq-wrapper{
+    background: #5379921b;
+}
+.faq-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // grid-row: 2/3;
+    // grid-column: 2/3;
+    width: 80%;
+}
+.faq-card{
+    max-width: 400px;
+    flex: 0 5 400px;
+    // min-width: 250px;
+}
