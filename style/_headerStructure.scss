@@ -1,12 +1,18 @@
 header{
     position: relative;
+   
 }
 // nav items
 
 .nav-container {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    width: 80%;
+    // background: black;
+    align-items: center;
+    margin: 0;
+    padding: 0 .5rem;
+    padding-top: .5rem;
 }
 
 nav {
@@ -20,9 +26,14 @@ ul {
 
     li {
         list-style: none;
-        text-decoration: none;
+        
         align-items: center;
         padding: 1rem;
+        a{
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
     }
 }
 

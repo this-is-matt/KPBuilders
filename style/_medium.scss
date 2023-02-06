@@ -18,6 +18,18 @@
 
 
 //breakpoint at 1030 for cards and faq. 
-// breakpoint at 640 for menu
+// breakpoint at 900 for menu
 // breakpoint at 850 for cta
 // breakpoint at 1516 for faq 
+
+@media only screen and (max-width: 900px) {
+   nav{
+    display:none;
+   }
+   .nav-container{
+    justify-content: center;
+   }
+   .nav-logo{
+    height: 125px;
+   }
+}

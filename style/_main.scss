@@ -63,10 +63,14 @@ div {
 }
 
 .color-overlay {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background: #0000009b;
     height: 100%;
     width: 100%;
     position: absolute;
+    padding: 0;
 }
 
 .nav-logo {
@@ -77,6 +81,8 @@ div {
     background: #fff;
     border-radius: v.$radius;
     color: v.$light-accent;
+    padding: .75rem;
+    margin: auto 0;
 }
 
 
