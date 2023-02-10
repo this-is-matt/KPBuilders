@@ -20,8 +20,10 @@
 //breakpoint at 1030 for cards and faq. 
 // breakpoint at 900 for menu
 // breakpoint at 850 for cta
+// breakpoint at 620 fir header redesign
 // breakpoint at 1516 for faq 
 
+// Header design
 @media only screen and (max-width: 900px) {
    nav{
     display:none;
@@ -33,3 +35,47 @@
     height: 125px;
    }
 }
+
+
+// header design
+@media only screen and (max-width: 620px){
+    header {
+        background:rgba(0, 0, 0, 0.621);
+        // background: url(../assets/hero.jpg);
+        // background-size: contain;
+        height:auto;
+    }
+    .header-title-container {
+        padding: 1rem;
+        width: 95%;
+    }
+    .color-overlay{
+        //    height: auto; 
+        }
+    .nav-container {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.621);
+    }
+    .mb-header{
+        display: block;
+        width: 100%;
+    }
+    .hero-container{
+        // background: url(../assets/hero.jpg);
+        // background-size:contain;
+        // background-repeat: no-repeat;
+    }
+    
+}
+
+// header {
+//     background: url(../assets/hero.jpg);
+    //  no-repeat center top #0000005b;
+    // background-size: cover;
+    // background-blend-mode: lighten;
+    // min-height: 100vh;
+    // align-self: stretch;
+    // color: white;
+    // height: 100%;
+    // background-position: center;
+    // background-repeat: no-repeat;
