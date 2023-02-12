@@ -316,6 +316,11 @@ button:hover {
     display: none;
   }
 }
+@media only screen and (max-width: 1030px) {
+  .faq-container {
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 900px) {
   nav {
     display: none;
@@ -329,10 +334,29 @@ button:hover {
     height: 125px;
   }
 }
+@media only screen and (max-width: 850px) {
+  .cta-headshot {
+    display: none;
+  }
+
+  .cta-container {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .card {
+    flex-basis: 100%;
+    flex: 1;
+  }
+}
 @media only screen and (max-width: 620px) {
   header {
-    background: rgba(0, 0, 0, 0.621);
+    background: #5379921b;
     height: auto;
+    color: black;
+  }
+  header p {
+    color: black;
   }
 
   .header-title-container {
@@ -340,9 +364,13 @@ button:hover {
     width: 95%;
   }
 
+  .color-overlay {
+    background: none;
+  }
+
   .nav-container {
     width: 100%;
-    background: rgba(0, 0, 0, 0.621);
+    background: #5379921b;
   }
 
   .mb-header {
