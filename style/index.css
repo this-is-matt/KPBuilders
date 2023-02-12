@@ -351,12 +351,7 @@ button:hover {
 }
 @media only screen and (max-width: 620px) {
   header {
-    background: #5379921b;
     height: auto;
-    color: black;
-  }
-  header p {
-    color: black;
   }
 
   .header-title-container {
@@ -365,16 +360,10 @@ button:hover {
   }
 
   .color-overlay {
-    background: none;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.637));
   }
 
   .nav-container {
-    width: 100%;
-    background: #5379921b;
-  }
-
-  .mb-header {
-    display: block;
     width: 100%;
   }
 }

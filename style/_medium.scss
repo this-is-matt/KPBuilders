@@ -67,14 +67,14 @@
     // header design
     @media only screen and (max-width: 620px) {
         header {
-            background: #5379921b;
+            // background: #5379921b;
             // background: url(../assets/hero.jpg);
             // background-size: contain;
             height: auto;
-            color: black;
-            p{
-                color: black;
-            }
+            // color: black;
+            // p{
+            //     color: black;
+            // }
         }
 
         .header-title-container {
@@ -82,21 +82,22 @@
             width: 95%;
         }
 
-        .color-overlay {
-            //    height: auto; 
-            background: none;
+        .color-overlay { 
+            // background: none;
+            background: linear-gradient( rgb(0, 0, 0), rgba(0, 0, 0, 0.637));
         }
 
         .nav-container {
             width: 100%;
             // background: rgba(0, 0, 0, 0.621);
-            background: #5379921b;
+            // background: #5379921b;
+            // britt says white bg on logo if text color stays the same: background: white;
         }
 
-        .mb-header {
-            display: block;
-            width: 100%;
-        }
+        // .mb-header {
+        //     display: block;
+        //     width: 100%;
+        // }
 
         .hero-container {
             // background: url(../assets/hero.jpg);
