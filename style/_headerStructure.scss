@@ -28,12 +28,12 @@ ul {
     padding: 0;
     list-style: none;
     li {
-        padding: 1rem 0;      
+        padding: 1rem .25rem;      
         a{
             text-decoration: none;
             font-weight: bold;
             padding: .75rem;
-            margin: .35rem;
+            margin: .5rem;
             text-align: left;
             transition: .5s;
             font-size: clamp(1rem, 2vmin, 1.5rem);

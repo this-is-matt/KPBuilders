@@ -43,3 +43,26 @@ button:hover {
     background: v.$light-hover;
 }
 
+.contact-form{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 3rem 0;
+    div{
+        color: #fff;
+    }
+}
+
+.contact-body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/hero.jpg);
+    background-position: center;
+    header{
+        background: none;
+        height: auto;
+        .nav-container{
+margin: auto;
+        }
+    }
+}

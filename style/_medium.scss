@@ -22,78 +22,92 @@
 // breakpoint at 850 for cta
 // breakpoint at 620 fir header redesign
 // breakpoint at 1516 for faq 
-@media only screen and (max-width: 1520px){
+@media only screen and (max-width: 1520px) {
     .faq-container {
         justify-content: space-evenly;
     }
 }
+
 // cards and FAQ
 @media only screen and (max-width: 1030px) {
-    .faq-container, .services-container, .testimonials-wrapper{
+
+    .faq-container,
+    .services-container,
+    .testimonial-container {
         justify-content: center;
     }
+    .testimonials-wrapper {
+        align-items: center;
+    }
+    .faq-container{
+        width: auto;
+    }
 }
-    // Header design
-    @media only screen and (max-width: 900px) {
-        nav {
-            display: none;
-        }
 
-        .nav-container {
-            justify-content: center;
-        }
-
-        .nav-logo {
-            height: 125px;
-        }
+// Header design
+@media only screen and (max-width: 900px) {
+    nav {
+        display: none;
     }
 
-    // CTA Sizing Updates
-    @media only screen and (max-width: 850px) {
-        .cta-headshot {
-            display: none;
-        }
-
-        .cta-container {
-            padding: 2rem;
-        }
-
+    .nav-container {
+        justify-content: center;
     }
 
-    // card design
-    @media only screen and (max-width: 710px) {
-        .card {
-            flex-basis: 100%;
-        }
+    .nav-logo {
+        height: 125px;
     }
-
-    // header design
-    @media only screen and (max-width: 620px) {
-        header {
-            height: auto;
-        }
-
-        .header-title-container {
-            padding: 1rem;
-            width: 95%;
-        }
-
-        .color-overlay { 
-            background: linear-gradient( rgb(0, 0, 0), rgba(0, 0, 0, 0.608));
-        }
-
-        .nav-container {
-            width: 100%;
-        }
-        .hero-container {
-            // background: url(../assets/hero.jpg);
-            // background-size:contain;
-            // background-repeat: no-repeat;
-        }
-.faq-card{
-    max-width: none;
 }
-.faq-container{
-    width:auto;
-}
+
+// CTA Sizing Updates
+@media only screen and (max-width: 850px) {
+    .cta-headshot {
+        display: none;
     }
+
+    .cta-container {
+        padding: 2rem;
+    }
+
+}
+
+// card design
+@media only screen and (max-width: 710px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
+
+// header design
+@media only screen and (max-width: 620px) {
+    header {
+        height: auto;
+    }
+
+    .header-title-container {
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .color-overlay {
+        background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.608));
+    }
+
+    .nav-container {
+        width: 100%;
+    }
+
+    .hero-container {
+        // background: url(../assets/hero.jpg);
+        // background-size:contain;
+        // background-repeat: no-repeat;
+    }
+
+    .faq-card {
+        max-width: none;
+    }
+
+    .faq-container {
+        width: auto;
+    }
+}

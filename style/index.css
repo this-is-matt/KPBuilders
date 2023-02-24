@@ -32,6 +32,11 @@ header p {
   color: #fff;
 }
 
+.contact-header {
+  background: none;
+  height: auto;
+}
+
 .header-title-container h2 {
   color: #1da9ef;
   margin: 0;
@@ -167,13 +172,13 @@ ul {
   list-style: none;
 }
 ul li {
-  padding: 1rem 0;
+  padding: 1rem 0.25rem;
 }
 ul li a {
   text-decoration: none;
   font-weight: bold;
   padding: 0.75rem;
-  margin: 0.35rem;
+  margin: 0.5rem;
   text-align: left;
   transition: 0.5s;
   font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -241,6 +246,30 @@ button {
 
 button:hover {
   background: #2370a0b1;
+}
+
+.contact-form {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.contact-form div {
+  color: #fff;
+}
+
+.contact-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/hero.jpg);
+  background-position: center;
+}
+.contact-body header {
+  background: none;
+  height: auto;
+}
+.contact-body header .nav-container {
+  margin: auto;
 }
 
 .cta-wrapper {
@@ -322,8 +351,18 @@ button:hover {
   }
 }
 @media only screen and (max-width: 1030px) {
-  .faq-container, .services-container, .testimonials-wrapper {
+  .faq-container,
+.services-container,
+.testimonial-container {
     justify-content: center;
+  }
+
+  .testimonials-wrapper {
+    align-items: center;
+  }
+
+  .faq-container {
+    width: auto;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -384,8 +423,7 @@ button:hover {
   flex-direction: column;
   margin: auto 0;
   flex-wrap: wrap;
-  align-content: space-around;
-  width: 80%;
+  align-self: center;
 }
 .thanks-container h1 {
   color: #1da9ef;
@@ -393,15 +431,29 @@ button:hover {
 }
 
 .thanks-body {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/hero.jpg);
+  background-position: center;
 }
 
 .thanks-p {
-  font-size: 3rem;
+  font-size: 6rem;
+  font-size: clamp(2.5rem, 5vw, 6rem);
   color: white;
   margin: 0;
+}
+
+footer {
+  height: 4rem;
+  background: #5379921b;
+}
+footer:nth-child(1n) {
+  padding: 1rem 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
