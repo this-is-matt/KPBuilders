@@ -1,9 +1,9 @@
-@use 'variables';
+@use 'variables' as v;
 
 footer {
     height: 4rem;
 
-    background: #5379921b;
+    background: v.$grey;
 
     &:nth-child(1n){
         padding: 1rem 0;

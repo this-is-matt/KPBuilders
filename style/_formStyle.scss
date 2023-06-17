@@ -9,22 +9,27 @@ form {
     background: #606060b7;
     padding: 25px;
     margin: 25px;
+
     h2 {
         margin: 0 0 .5rem;
         color: v.$light-accent;
     }
 }
 
-input,
-textarea,
-select,
-button {
-    font-size: 16px;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid v.$light-accent;
-    border-radius: v.$radius;
+form {
+
+    input,
+    textarea,
+    select,
+    button {
+        font-size: 16px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid v.$light-accent;
+        border-radius: v.$radius;
+        background: v.$white;
+    }
 }
 
 input::placeholder {
@@ -36,33 +41,36 @@ button {
     border: none;
     background: v.$light-accent;
     font-weight: 400;
-    color: #fff;
+    color: v.$white;
 }
 
 button:hover {
     background: v.$light-hover;
 }
 
-.contact-form{
+.contact-form {
     background-size: cover;
     background-position: center;
     display: flex;
     align-content: center;
     justify-content: center;
     padding: 3rem 0;
-    div{
-        color: #fff;
+
+    div {
+        color:v.$white;
     }
 }
 
-.contact-body{
+.contact-body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/hero.jpg);
     background-position: center;
-    header{
+
+    header {
         background: none;
         height: auto;
-        .nav-container{
-margin: auto;
+
+        .nav-container {
+            margin: auto;
         }
     }
 }

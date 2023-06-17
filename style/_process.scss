@@ -1,0 +1,79 @@
+@use 'variables' as v;
+
+.process-wrapper {
+    background: #5379921b;
+    padding: 5rem;
+}
+
+.collapse-content {
+    /*   display: none; */
+    background: v.$light-hover;
+    background: v.$grey;
+    height: 0px;
+    color: v.$white;
+    color: v.$dark-grey;
+    transition: 250ms ease-out;
+    margin-top: 0;
+    overflow: hidden;
+    border-radius: 0 0 5px 5px;
+    padding: 0;
+
+    li {
+        list-style: none;
+        font-size: larger;
+        line-height: 1.5;
+    }
+}
+
+.collapse-p {
+    margin: 0;
+    padding: 20px;
+}
+
+.collapse {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0;
+    border-radius: 5px 5px;
+    transition: 250ms ease-out;
+    font-weight: bold;
+    font-size: larger;
+    color: v.$white;
+}
+
+//js triggered adjustments to ^
+.active-btn {
+    border-radius: 5px 5px 0 0;
+    // transition: 750ms ease-out;
+}
+
+.active-content {
+    height: min(200px);
+    transition: 500ms ease-out;
+}
+
+.collapse-container {
+    width: 80%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+    .collapse-container {
+        width: 100%;
+        color: black;
+    }
+.collapse-content li{
+        list-style: disc;
+}
+    .process-wrapper {
+        padding: 1rem;
+    }
+
+    .active-content {
+        height: 250px;
+        padding-right: 1rem;
+    }
+
+}

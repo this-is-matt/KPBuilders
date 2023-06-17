@@ -3,11 +3,15 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    color: v.$dark-grey;
 }
-html{
+
+html {
     height: 100%;
     margin: 0;
+    line-height: 1.25;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -15,35 +19,45 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-size: xx-large;
+}
+
 header {
-    background: url(../assets/hero.jpg);
+    background: url(../assets/hero1.jpg);
     //  no-repeat center top #0000005b;
     // background-size: cover;
     // background-blend-mode: lighten;
     // min-height: 100vh;
     // align-self: stretch;
-    color: white;
+    color: v.$white;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
 
     h1 {
-        // font-size: 6rem;
         font-size: 6rem;
         font-size: clamp(2.5rem, 5vw, 6rem);
         margin: 0;
+        color: v.$white;
+    }
+
+    h2 {
+        font-size: x-large;
     }
 
     p {
         // color: v.$dark-accent;
         color: v.$light-accent;
-        color: #fff;
+        color: v.$white;
     }
 }
-.contact-header{
+
+.contact-header {
     background: none;
     height: auto;
 }
+
 .header-title-container h2 {
     color: v.$light-accent;
     margin: 0;
@@ -54,7 +68,8 @@ main {
     flex-direction: column;
     justify-items: center;
     justify-content: space-between;
-    margin: 5rem 0;
+    // margin: 5rem 0;
+    background: v.$white;
 }
 
 div {
@@ -82,7 +97,7 @@ div {
 }
 
 .nav-btn {
-    background: #fff;
+    background: v.$white;
     border-radius: v.$radius;
     color: v.$light-accent;
     padding: .75rem;
@@ -98,7 +113,6 @@ div {
     width: 80%;
     flex-wrap: wrap;
 }
-
 
 
 .about-us-container {
@@ -117,14 +131,18 @@ div {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    margin: 4rem 0;
+    // margin: 4rem 0;
+    padding: 3rem;
 
     h2 {
-        grid-row: 1/2;
-        grid-column: 2/3;
         color: v.$light-accent;
         padding-bottom: .5rem;
     }
+}
+
+.about-wrapper {
+    background: #5379921b;
+    padding: 3rem;
 }
 
 .card {
@@ -133,17 +151,14 @@ div {
     // these values aren't working how i want. i can't get them to shrink how i want and still have a max height 
     // flex: 0 1 auto;
     width: 25%;
-    min-width: 250px;
+    min-width: 300px;
     min-height: 400px;
-    background: #fff;
+    background: v.$white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
     border-radius: v.$radius;
     overflow: hidden;
     margin: .5rem;
 
-    // img{
-    //     max-width: 350px;
-    // }    
     p,
     a {
         padding: 1rem;
@@ -154,18 +169,37 @@ div {
     .testimonial-sub {
         margin: 0 0 0 1rem;
         padding: 0;
+        padding-bottom: 1rem;
         text-align: left;
     }
 
     //needs work
-    .emphasize {
+    h3 {
         margin: auto .5rem;
         padding: 1rem;
-        border: 1px solid black;
         font-weight: bold;
-        font-size: larger;
-        border-radius: v.$radius;
     }
+}
+
+.testimonial-card {
+    display: block;
+    padding: 0;
+
+    // background: 
+    h3 {
+        background: v.$light-accent;
+        margin: 0;
+        color: v.$white;
+        text-align: center;
+    }
+}
+
+.testimonials-wrapper,
+.services-wrapper {
+    background: url(../assets/Bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .services-card-img {

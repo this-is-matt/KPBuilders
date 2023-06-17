@@ -5,9 +5,10 @@
     max-width: 800px;
     align-self: center;
     padding: 0;
+    margin: 5rem;
     border-radius: v.$radius;
     flex-direction: row;
-    background: #5379921b;
+    background: v.$grey;
     overflow: hidden;
 
 }
@@ -37,7 +38,7 @@
     width: 250px;
     text-decoration: none;
     background: v.$light-accent;
-    color: white;
+    color: v.$white;
     transition: background-color 250ms;
     text-align: center;
 

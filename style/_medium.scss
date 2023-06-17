@@ -17,16 +17,11 @@
 }
 
 
-//breakpoint at 1030 for cards and faq. 
+//breakpoint at 1030 for cards and process. 
 // breakpoint at 900 for menu
 // breakpoint at 850 for cta
-// breakpoint at 620 fir header redesign
-// breakpoint at 1516 for faq 
-@media only screen and (max-width: 1520px) {
-    .faq-container {
-        justify-content: space-evenly;
-    }
-}
+// breakpoint at 620 for header redesign
+
 
 // cards and FAQ
 @media only screen and (max-width: 1030px) {
@@ -41,6 +36,16 @@
     }
     .faq-container{
         width: auto;
+    }
+
+    .collapse-container {
+        width: 100%;
+    }
+    .process-wrapper{
+        padding: 5rem 2rem;
+        h2{
+            margin-top: 0;
+        }
     }
 }
 
@@ -67,6 +72,9 @@
 
     .cta-container {
         padding: 2rem;
+    }
+    .cta-wrapper{
+        margin: 2rem;
     }
 
 }
@@ -102,7 +110,9 @@
         // background-size:contain;
         // background-repeat: no-repeat;
     }
-
+ .about-wrapper{
+    padding: 1rem;
+ }
     .faq-card {
         max-width: none;
     }
