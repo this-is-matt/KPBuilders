@@ -22,34 +22,31 @@
 
 nav {
     text-align: center;
-}
+    max-width: 760px;
+    .nav-icon{
+        display: none;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        list-style: none;
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    list-style: none;
-
-    li {
-        padding: 1rem .25rem;
-
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            padding: .75rem;
-            margin: .5rem;
-            text-align: left;
-            transition: .5s;
-            font-size: clamp(1rem, 2vmin, 1.5rem);
-
-            &:hover {
-                // color: white;
-                // background-color: v.$light-accent;
-                background: v.$white;
-                border-radius: v.$radius;
-                color: v.$light-accent;
+        li {
+            a {
+                text-decoration: none;
+                font-weight: bold;
                 padding: .75rem;
-                margin: auto 0;
+                margin: .5rem;
+                text-align: left;
+                transition: .5s;
+                font-size: clamp(1rem, 2vmin, 1.5rem);
+
+                &:hover {
+                    background: v.$white;
+                    border-radius: v.$radius;
+                    color: v.$light-accent;
+                }
             }
         }
     }

@@ -11,6 +11,16 @@
   <link rel="stylesheet" href="./style/index.css">
   <script defer src="./js/date.js"></script>
   <script defer src="./js/collapse.js"></script>
+  <script>
+    function navChange() {
+      const nav = document.querySelectorAll("nav li");
+      const navBtn = document.querySelector("nav-btn");
+      console.log(nav)
+      nav.forEach(li =>
+        li.classList.toggle("nav-change"));
+        navBtn.classList.toggle("nav-btn-change");
+    }
+  </script>
   <title>KP Builders | Home</title>
 </head>
 
@@ -21,11 +31,12 @@
         <a href="index.html"><img class="nav-logo" src="./assets/KPLogoLBlue.png" alt="Business Logo"></a>
         <nav>
           <ul>
+            <li class="nav-icon" onclick="navChange()">🍔</li>
             <li><a href="#about-wrapper">About</a></li>
             <li><a href="#services-wrapper">Services</a></li>
             <li><a href="#testimonial-wrapper">Tesimonials</a></li>
             <li><a href="#process-wrapper">Process</a></li>
-            <li class="nav-btn"><a href="../view/contact.html">Contact</a></li>
+            <li ><a href="../view/contact.html" class="nav-btn">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -39,7 +50,7 @@
           </p>
         </div>
         <div class="header-form-container">
-          <form action="https://formsubmit.co/99ac8d502401381637abc5540601e1ca" method="POST">
+          <form action="https://formsubmit.co/e45604806e8e1ca355c351566792db97" method="POST">
             <h2>MAKE AND INQUIRY</h2>
             <label for="name">
               <input type="text" name="name" id="name" placeholder="Name*" required>
@@ -62,8 +73,7 @@
             <textarea name="Additional Details" cols="30" rows="6" placeholder="Additional details"></textarea>
             <button type="submit">Send Message</button>
             <div>Or call: <a href="tel:+18019419503">801-941-9503</a></div>
-            <input type="hidden" name="_template" value="table">
-            <!-- Need to update after site is created. -->
+            <input type="hidden" name="_template" value="box">
             <input type="hidden" name="_next" value="https://www.kpbuildersutah.com/view/thanks.html">
             <input type="hidden" name="_subject" value="KP Builders Communication Request">
             <!-- Too see other hidden field options and to learn about creating an archive go to: https://formsubmit.co/documentation -->

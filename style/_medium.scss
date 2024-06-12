@@ -31,38 +31,60 @@
     .testimonial-container {
         justify-content: center;
     }
+
     .testimonials-wrapper {
         align-items: center;
     }
-    .faq-container{
+
+    .faq-container {
         width: auto;
     }
 
     .collapse-container {
         width: 100%;
     }
-    .process-wrapper{
+
+    .process-wrapper {
         padding: 5rem 2rem;
-        h2{
+
+        h2 {
             margin-top: 0;
         }
     }
 }
 
 // Header design
-@media only screen and (max-width: 900px) {
-    nav {
-        display: none;
-    }
+// @media only screen and (max-width: 900px) {
+//     nav {
 
-    .nav-container {
-        justify-content: center;
-    }
+//         ul {
+//             flex-direction: column;
+//         }
 
-    .nav-logo {
-        height: 125px;
-    }
-}
+//         li {
+//             display: none;
+//             transition: all 1s ease-in-out;
+//         }
+
+//         .nav-icon {
+//             display: block;
+//         }
+//     }
+
+//     .nav-change {
+//         display: block;
+//     }
+
+//     .nav-container {
+//         justify-content: center;
+//         flex-direction: column;
+//     }
+
+//     .nav-logo {
+//         margin-top: 1rem;
+//         height: 125px;
+//     }
+// }
 
 // CTA Sizing Updates
 @media only screen and (max-width: 850px) {
@@ -73,17 +95,63 @@
     .cta-container {
         padding: 2rem;
     }
-    .cta-wrapper{
+
+    .cta-wrapper {
         margin: 2rem;
     }
 
 }
 
-// card design
+// card design And nav updates
 @media only screen and (max-width: 710px) {
     .card {
         flex-basis: 100%;
     }
+
+//Nav updates
+    nav {
+
+        ul {
+            flex-direction: column;
+        }
+
+        li {
+            display: none;
+        }
+
+        .nav-icon {
+            display: block;
+        }
+    }
+
+    .nav-change, .nav-change a {
+        display: block;
+    }
+    .nav-btn-change{
+        text-decoration: none;
+                font-weight: bold;
+                padding: .75rem;
+                margin: .5rem;
+                text-align: left;
+                transition: .5s;
+                font-size: clamp(1rem, 2vmin, 1.5rem);
+
+                &:hover {
+                    background: v.$white;
+                    border-radius: v.$radius;
+                    color: v.$light-accent;
+                }
+    }
+
+    .nav-container {
+        display: block;
+    }
+
+    .nav-logo {
+        margin: 1rem;
+        height: 150px;
+    }
+
 }
 
 // header design
@@ -110,9 +178,11 @@
         // background-size:contain;
         // background-repeat: no-repeat;
     }
- .about-wrapper{
-    padding: 1rem;
- }
+
+    .about-wrapper {
+        padding: 1rem;
+    }
+
     .faq-card {
         max-width: none;
     }
